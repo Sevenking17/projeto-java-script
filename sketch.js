@@ -1,3 +1,18 @@
+let cor;
+
+let circuloX;
+
+let circuloY;
+
+function setup(){
+  createCanvas(400, 400);
+  background(random(0,300),random(0,300),random(0,300))
+  cor=color (random(0,300),random(0,300),random(0,300))
+ 
+  circuloX=[0,0];
+  circuloY=[random(height),random(height)]
+}
+
 function draw() {
  fill(cor)
  circle(circuloX[0],circuloY[0],50);
